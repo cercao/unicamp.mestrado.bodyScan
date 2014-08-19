@@ -1,0 +1,10 @@
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorMine\bin\Debug\ColorMine.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorMine\bin\Debug\ColorMine.pdb
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorMine\obj\Debug\colormine.csprojResolveAssemblyReference.cache
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorMine\obj\Debug\ColorMine.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorMine\obj\Debug\ColorMine.pdb
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorMine\bin\Debug\ColorMine.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorMine\bin\Debug\ColorMine.pdb
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorMine\obj\Debug\colormine.csprojResolveAssemblyReference.cache
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorMine\obj\Debug\ColorMine.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorMine\obj\Debug\ColorMine.pdb

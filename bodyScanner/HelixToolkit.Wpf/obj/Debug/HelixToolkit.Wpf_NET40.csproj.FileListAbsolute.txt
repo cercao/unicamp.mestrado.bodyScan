@@ -1,0 +1,9 @@
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\HelixToolkit.Wpf_NET40.csprojResolveAssemblyReference.cache
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\Resources\TeapotGeometry.baml
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\Controls\Stereo\InterlacedView3D.g.cs
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\Controls\Stereo\AnaglyphView3D.g.cs
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\Controls\Stereo\StereoView3D.g.cs
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\Controls\Stereo\WiggleView3D.g.cs
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\HelixToolkit.Wpf_MarkupCompile.cache
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\HelixToolkit.Wpf\obj\Debug\HelixToolkit.Wpf_MarkupCompile.lref

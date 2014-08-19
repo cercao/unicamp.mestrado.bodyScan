@@ -1,0 +1,305 @@
+﻿<Page x:Class="Microsoft.Samples.Kinect.KinectFusionExplorer.Terceira"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:Microsoft.Samples.Kinect.KinectFusionExplorer"
+        xmlns:tk="clr-namespace:Microsoft.Kinect.Toolkit;assembly=Microsoft.Kinect.Toolkit"
+        Width="830" Height="640" Loaded="WindowLoaded" DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+    <Page.Resources>
+        <SolidColorBrush x:Key="MediumGreyBrush" Color="#ff6e6e6e"/>
+        <SolidColorBrush x:Key="KinectBlueBrush" Color="#ff00BCF2"/>
+        <SolidColorBrush x:Key="KinectPurpleBrush" Color="#000000"/>
+
+        <l:DepthToTextConverter x:Key="dtt"/>
+
+        <Style TargetType="{x:Type Button}" x:Key="ResetButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Grid>
+                                <Image x:Name="ResetNormal" Source="Images\ResetNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                <Image x:Name="ResetHover" Source="Images\ResetHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                            </Grid>
+                            <TextBlock x:Name="ResetText" Text="{TemplateBinding Content}" TextAlignment="Left" VerticalAlignment="Center" Foreground="{StaticResource KinectPurpleBrush}" FontSize="15" Margin="5 0 0 0"/>
+                        </StackPanel>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="ResetNormal"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="ResetHover"/>
+                                <Setter Property="Foreground" Value="{StaticResource KinectBlueBrush}" TargetName="ResetText"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Button}" x:Key="MeshButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Grid>
+                                <Image x:Name="MeshNormal" Source="Images\MeshNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                <Image x:Name="MeshHover" Source="Images\MeshHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                            </Grid>
+                            <TextBlock x:Name="MeshText" Text="{TemplateBinding Content}" TextAlignment="Left" VerticalAlignment="Center" Foreground="{StaticResource KinectPurpleBrush}" FontSize="15" Margin="5 0 0 0"/>
+                        </StackPanel>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="MeshNormal"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="MeshHover"/>
+                                <Setter Property="Foreground" Value="{StaticResource KinectBlueBrush}" TargetName="MeshText"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type RadioButton}" x:Key="KinectRadioButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RadioButton}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Grid x:Name="RadioButtonChecked">
+                                <Image x:Name="CheckedNormal" Source="Images\RadioCheckedNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                <Image x:Name="CheckedHover" Source="Images\RadioCheckedHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                            </Grid>
+                            <Grid x:Name="RadioButtonUnchecked" Visibility="Collapsed">
+                                <Image x:Name="UncheckedNormal" Source="Images\RadioUncheckedNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                <Image x:Name="UncheckedHover" Source="Images\RadioUncheckedHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                            </Grid>
+                            <TextBlock x:Name="RadioButtonText" Text="{TemplateBinding Content}" TextAlignment="Left" VerticalAlignment="Center" Foreground="{StaticResource KinectPurpleBrush}" FontSize="15" Margin="5 0 0 0"/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="false">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="RadioButtonChecked"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="RadioButtonUnchecked"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="CheckedNormal"/>
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="UncheckedNormal"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="CheckedHover"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="UncheckedHover"/>
+                                <Setter Property="Foreground" Value="{StaticResource KinectBlueBrush}" TargetName="RadioButtonText"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type CheckBox}" x:Key="KinectCheckBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" Background="Transparent">
+                                <Grid x:Name="CheckBoxChecked">
+                                    <Image x:Name="CheckedNormal" Source="Images\CheckedNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                    <Image x:Name="CheckedHover" Source="Images\CheckedHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                                </Grid>
+                                <Grid x:Name="CheckBoxUnchecked" Visibility="Collapsed">
+                                    <Image x:Name="UncheckedNormal" Source="Images\UncheckedNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                    <Image x:Name="UncheckedHover" Source="Images\UncheckedHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                                </Grid>
+                                <TextBlock x:Name="CheckBoxText" Text="{TemplateBinding Content}" TextAlignment="Left"  VerticalAlignment="Center" Foreground="{StaticResource KinectPurpleBrush}" FontSize="15"  Margin="9,0,0,0"/>
+                            </StackPanel>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="false">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="CheckBoxChecked"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="CheckBoxUnchecked"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="CheckedNormal"/>
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="UncheckedNormal"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="CheckedHover"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="UncheckedHover"/>
+                                <Setter Property="Foreground" Value="{StaticResource KinectBlueBrush}" TargetName="CheckBoxText"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SliderRepeatButtonStyle" TargetType="{x:Type RepeatButton}">
+            <Setter Property="OverridesDefaultStyle" Value="true"/>
+            <Setter Property="IsTabStop" Value="false"/>
+            <Setter Property="Focusable" Value="false"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Rectangle Fill="Transparent"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="HorizontalSliderThumbStyle" TargetType="{x:Type Thumb}">
+            <Setter Property="Focusable" Value="false"/>
+            <Setter Property="OverridesDefaultStyle" Value="true"/>
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="Width" Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource KinectPurpleBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Canvas SnapsToDevicePixels="true">
+                            <Border x:Name="Body" Width="11" Height="22" Background="{TemplateBinding Foreground}"/>
+                        </Canvas>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="KinectSlider" TargetType="{x:Type Slider}">
+            <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource KinectPurpleBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Slider}">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TickBar x:Name="Tick" Fill="{TemplateBinding Foreground}" Height="4" Placement="Top" Grid.Row="0" Visibility="Visible"/>
+                                <Border x:Name="TrackBackground" Background="{TemplateBinding Foreground}" CornerRadius="1" Height="4.0" Margin="5,0" Grid.Row="1" VerticalAlignment="center">
+                                    <Canvas Margin="-6,-1">
+                                        <Rectangle x:Name="PART_SelectionRange" Fill="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Height="4.0" Stroke="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" StrokeThickness="1.0" Visibility="Hidden"/>
+                                    </Canvas>
+                                </Border>
+                                <Track x:Name="PART_Track" Grid.Row="1">
+                                    <Track.DecreaseRepeatButton>
+                                        <RepeatButton Command="{x:Static Slider.DecreaseLarge}" Style="{StaticResource SliderRepeatButtonStyle}"/>
+                                    </Track.DecreaseRepeatButton>
+                                    <Track.IncreaseRepeatButton>
+                                        <RepeatButton Command="{x:Static Slider.IncreaseLarge}" Style="{StaticResource SliderRepeatButtonStyle}"/>
+                                    </Track.IncreaseRepeatButton>
+                                    <Track.Thumb>
+                                        <Thumb x:Name="Thumb" Style="{StaticResource HorizontalSliderThumbStyle}"/>
+                                    </Track.Thumb>
+                                </Track>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Foreground" Value="{StaticResource KinectBlueBrush}"/>
+                                <Setter Property="Foreground" Value="{StaticResource KinectBlueBrush}" TargetName="Thumb"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="KinectTextFormat" TargetType="{x:Type TextBlock}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+    </Page.Resources>
+
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" >
+            <tk:KinectSensorChooserUI  Name="sensorChooserUI" HorizontalAlignment="Center" />
+        </DockPanel>
+
+        <Grid Grid.Row="1">
+            <Grid x:Name="CompositeHost"  HorizontalAlignment="Center" ClipToBounds="False" >               
+                <TextBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" Name="txtLog"  HorizontalAlignment="Left" Height="493"  Width="700" TextWrapping="Wrap" VerticalAlignment="Top" />                
+            </Grid>            
+        </Grid>
+
+        <Grid Grid.Row="2" Height="110"  Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="610"/>
+                <ColumnDefinition Width="220"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" BorderBrush="{StaticResource KinectPurpleBrush}" BorderThickness="2" Margin="0,0,0,0">
+                <Grid Margin="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Name="lbStatus" FontSize="18" Content="Aguarde o processamento finalizar." Margin="160 30 0 0" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top"/>
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="1" BorderBrush="{StaticResource KinectPurpleBrush}" BorderThickness="2" Margin="0,0,0,0" >
+                <Grid Margin="10,12,-10,-12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Row="1" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0 5 0 0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>                            
+                        </Grid>
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+
+            <Border BorderBrush="{StaticResource KinectPurpleBrush}" BorderThickness="2" MinWidth="210" Margin="0,0,0,0" Grid.Column="2">
+                <Grid Margin="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Margin="0 20 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+                        <Button Name="btnProximo" Background="{StaticResource KinectPurpleBrush}" BorderBrush="White" BorderThickness="2" Content="Próximo Passo" Foreground="White" Focusable="False"  Grid.Column="0" Margin="20,10,20,-10" Grid.Row="0" Click="btnProximo_Click"  />
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <StatusBar Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Foreground="{StaticResource MediumGreyBrush}" Background="White">
+            <StatusBarItem Padding="0 0 10 10">
+                <TextBlock Name="fpsText">Fps: 0.00</TextBlock>
+            </StatusBarItem>
+            <StatusBarItem Padding="0 0 0 10">
+                <TextBlock Name="statusBarText">Status</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+
+        <Grid Grid.Row="4">
+        </Grid>
+
+    </Grid>
+
+</Page>

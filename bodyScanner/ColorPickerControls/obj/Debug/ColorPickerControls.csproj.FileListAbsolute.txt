@@ -1,0 +1,21 @@
+C:\Users\Lucas\Desktop\ImageColorPicker_src\ColorPickerControls\bin\Debug\ColorPickerControls.dll
+C:\Users\Lucas\Desktop\ImageColorPicker_src\ColorPickerControls\bin\Debug\ColorPickerControls.pdb
+C:\Users\Lucas\Desktop\ImageColorPicker_src\ColorPickerControls\obj\Debug\ColorPickerControls.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Desktop\ImageColorPicker_src\ColorPickerControls\obj\Debug\ColorPickerControls.Properties.Resources.resources
+C:\Users\Lucas\Desktop\ImageColorPicker_src\ColorPickerControls\obj\Debug\ColorPickerControls.csproj.GenerateResource.Cache
+C:\Users\Lucas\Desktop\ImageColorPicker_src\ColorPickerControls\obj\Debug\ColorPickerControls.dll
+C:\Users\Lucas\Desktop\ImageColorPicker_src\ColorPickerControls\obj\Debug\ColorPickerControls.pdb
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorPickerControls\bin\Debug\ColorPickerControls.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorPickerControls\bin\Debug\ColorPickerControls.pdb
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorPickerControls\obj\Debug\ColorPickerControls.csprojResolveAssemblyReference.cache
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorPickerControls\obj\Debug\ColorPickerControls.Properties.Resources.resources
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorPickerControls\obj\Debug\ColorPickerControls.csproj.GenerateResource.Cache
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorPickerControls\obj\Debug\ColorPickerControls.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\ColorPickerControls\obj\Debug\ColorPickerControls.pdb
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorPickerControls\bin\Debug\ColorPickerControls.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorPickerControls\bin\Debug\ColorPickerControls.pdb
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorPickerControls\obj\Debug\ColorPickerControls.csprojResolveAssemblyReference.cache
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorPickerControls\obj\Debug\ColorPickerControls.Properties.Resources.resources
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorPickerControls\obj\Debug\ColorPickerControls.csproj.GenerateResource.Cache
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorPickerControls\obj\Debug\ColorPickerControls.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\ColorPickerControls\obj\Debug\ColorPickerControls.pdb

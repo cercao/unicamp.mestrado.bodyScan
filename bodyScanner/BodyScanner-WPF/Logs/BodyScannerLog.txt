@@ -1,0 +1,15 @@
+Convertendo informação de cores para LAB... 
+Iniciando K-Means... 
+Diferença: 15.780697111451 Hora:8/1/2014 4:46:14 PM
+Diferença: 4.48554415758353 Hora:8/1/2014 4:46:19 PM
+Diferença: 3.59533048240237 Hora:8/1/2014 4:46:23 PM
+Diferença: 2.65818211107597 Hora:8/1/2014 4:46:28 PM
+Diferença: 2.02690834080448 Hora:8/1/2014 4:46:32 PM
+Diferença: 1.71744729482167 Hora:8/1/2014 4:46:37 PM
+Salvando um novo modelo com as novas informações de cores... 
+Processamento finalizado com sucesso (16:46:45): 
+Grupo 1:8% 
+Grupo 2:19% 
+Grupo 3:23% 
+Grupo 4:26% 
+Grupo 5:22% 

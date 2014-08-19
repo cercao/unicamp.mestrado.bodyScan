@@ -1,0 +1,27 @@
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\KinectFusion180_32.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\KinectFusion180_64.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\Microsoft.Kinect.Toolkit.Fusion.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\Microsoft.Kinect.Toolkit.Fusion.pdb
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.csprojResolveAssemblyReference.cache
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.Resources.resources
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.csproj.GenerateResource.Cache
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\C#\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.pdb
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\KinectFusion180_32.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\KinectFusion180_64.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\Microsoft.Kinect.Toolkit.Fusion.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\Microsoft.Kinect.Toolkit.Fusion.pdb
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.csprojResolveAssemblyReference.cache
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.Resources.resources
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.csproj.GenerateResource.Cache
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.dll
+C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Samples\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.pdb
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\KinectFusion180_32.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\KinectFusion180_64.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\Microsoft.Kinect.Toolkit.Fusion.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\bin\Debug\Microsoft.Kinect.Toolkit.Fusion.pdb
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.csprojResolveAssemblyReference.cache
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.Resources.resources
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.csproj.GenerateResource.Cache
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.dll
+C:\Projetos\Unicamp\unicamp.mestradocompleto\bodyScanner\Microsoft.Kinect.Toolkit.Fusion\obj\Debug\Microsoft.Kinect.Toolkit.Fusion.pdb

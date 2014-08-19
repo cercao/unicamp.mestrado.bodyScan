@@ -1,0 +1,12 @@
+﻿<Page x:Class="Microsoft.Samples.Kinect.KinectFusionExplorer.Relatorio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:Microsoft.Samples.Kinect.KinectFusionExplorer"
+        xmlns:tk="clr-namespace:Microsoft.Kinect.Toolkit;assembly=Microsoft.Kinect.Toolkit"
+        Width="830" Height="640" Loaded="WindowLoaded" DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+    <Grid >
+        <WebBrowser Name="pdfViewer" Height="640" Margin="-10 0 5 0" Width="830"/>
+    </Grid>
+
+</Page>
