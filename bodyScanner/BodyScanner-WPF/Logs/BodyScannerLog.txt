@@ -13,3 +13,51 @@ Grupo 2:19%
 Grupo 3:23% 
 Grupo 4:26% 
 Grupo 5:22% 
+Convertendo informação de cores para LAB... 
+Iniciando K-Means... 
+Diferença: 3.39204517086314 Hora:1/28/2015 10:27:32 PM
+Diferença: 3.51299446510343 Hora:1/28/2015 10:27:40 PM
+Diferença: 1.04911843224125 Hora:1/28/2015 10:27:48 PM
+Diferença: 0.18251053887281 Hora:1/28/2015 10:27:55 PM
+Diferença: 0.0926652533947408 Hora:1/28/2015 10:28:03 PM
+Diferença: 0.167710655949414 Hora:1/28/2015 10:28:11 PM
+Diferença: 0.201029466233997 Hora:1/28/2015 10:28:18 PM
+Diferença: 0.195747622839081 Hora:1/28/2015 10:28:26 PM
+Diferença: 0.187177094477306 Hora:1/28/2015 10:28:34 PM
+Salvando um novo modelo com as novas informações de cores... 
+Processamento finalizado com sucesso (22:28:48): 
+Grupo 1:24% 
+Grupo 2:23% 
+Grupo 3:11% 
+Grupo 4:15% 
+Grupo 5:24% 
+Convertendo informação de cores para LAB... 
+Iniciando K-Means... 
+Diferença: 44.2240647498887 Hora:1/28/2015 10:32:43 PM
+Diferença: 4.38847111025173 Hora:1/28/2015 10:32:50 PM
+Diferença: 1.79851776156833 Hora:1/28/2015 10:32:58 PM
+Diferença: 0.424234743714261 Hora:1/28/2015 10:33:05 PM
+Diferença: 0.560945162505132 Hora:1/28/2015 10:33:13 PM
+Diferença: 0.585739811763322 Hora:1/28/2015 10:33:20 PM
+Diferença: 0.489028496776026 Hora:1/28/2015 10:33:28 PM
+Diferença: 0.411674257454852 Hora:1/28/2015 10:33:35 PM
+Salvando um novo modelo com as novas informações de cores... 
+Processamento finalizado com sucesso (22:33:50): 
+Grupo 1:15% 
+Grupo 2:11% 
+Grupo 3:24% 
+Grupo 4:25% 
+Grupo 5:24% 
+Convertendo informação de cores para LAB... 
+Iniciando K-Means... 
+Diferença: 24.9463513277751 Hora:1/28/2015 10:36:13 PM
+Diferença: 9.65198449107792 Hora:1/28/2015 10:36:20 PM
+Diferença: 10.8981327037505 Hora:1/28/2015 10:36:27 PM
+Diferença: 7.5713533019579 Hora:1/28/2015 10:36:35 PM
+Salvando um novo modelo com as novas informações de cores... 
+Processamento finalizado com sucesso (22:36:48): 
+Grupo 1:25% 
+Grupo 2:12% 
+Grupo 3:24% 
+Grupo 4:27% 
+Grupo 5:10% 

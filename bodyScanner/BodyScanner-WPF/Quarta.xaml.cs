@@ -151,7 +151,10 @@ namespace Microsoft.Samples.Kinect.KinectFusionExplorer
 
                         if (null == g1Material)
                             g1Material = MaterialHelper.CreateMaterial(
-                             System.Windows.Media.Color.FromRgb(0,0,255));
+                             System.Windows.Media.Color.FromRgb(
+                                 Byte.Parse(coord[4]),
+                                 Byte.Parse(coord[5]),
+                                 Byte.Parse(coord[6])));
 
                     }
 
@@ -164,7 +167,10 @@ namespace Microsoft.Samples.Kinect.KinectFusionExplorer
 
                         if (null == g2Material)
                             g2Material = MaterialHelper.CreateMaterial(
-                                System.Windows.Media.Color.FromRgb(0, 255, 0));
+                            System.Windows.Media.Color.FromRgb(
+                                Byte.Parse(coord[4]),
+                                Byte.Parse(coord[5]),
+                                Byte.Parse(coord[6])));
                     }
 
                     if (Int32.Parse(coord[7]) == 3)
@@ -176,7 +182,10 @@ namespace Microsoft.Samples.Kinect.KinectFusionExplorer
 
                         if (null == g3Material)
                             g3Material = MaterialHelper.CreateMaterial(
-                                System.Windows.Media.Color.FromRgb(255, 0, 0));
+                            System.Windows.Media.Color.FromRgb(
+                                Byte.Parse(coord[4]),
+                                Byte.Parse(coord[5]),
+                                Byte.Parse(coord[6])));
                     }
 
                     if (Int32.Parse(coord[7]) == 4)
@@ -188,7 +197,10 @@ namespace Microsoft.Samples.Kinect.KinectFusionExplorer
 
                         if (null == g4Material)
                             g4Material = MaterialHelper.CreateMaterial(
-                                System.Windows.Media.Color.FromRgb(255, 255, 0));
+                            System.Windows.Media.Color.FromRgb(
+                                Byte.Parse(coord[4]),
+                                Byte.Parse(coord[5]),
+                                Byte.Parse(coord[6])));
                     }
 
                     if (Int32.Parse(coord[7]) == 5)
@@ -200,7 +212,10 @@ namespace Microsoft.Samples.Kinect.KinectFusionExplorer
 
                         if (null == g5Material)
                             g5Material = MaterialHelper.CreateMaterial(
-                                System.Windows.Media.Color.FromRgb(255, 0, 255));
+                            System.Windows.Media.Color.FromRgb(
+                                Byte.Parse(coord[4]),
+                                Byte.Parse(coord[5]),
+                                Byte.Parse(coord[6])));
                     }
                 }
 
